@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html 
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background: url(gambar/bg.jpg);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li
+{
+    list-style: none;
+}
+
+li:hover
+{
+    background-color: grey;
+}
+
+
+header
+{
+    width: 100%;
+    float: left;
+    position: fixed;
+    background-color: black;
+    color: gold;
+    height: 8vh;
+}
+
+
+.preloader 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #fff;
+}
+.preloader .loading 
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font: 14px arial;
+}
+
+.biodata
+{
+    float: left;
+    font-size: 36px;
+    padding: 1% 2%;
+    
+}
+
+.header-nav li a
+{
+    color: white;
+    float: left;
+    padding: 2% 2%;
+}
+
+main
+{
+    border-color: gold;
+    border-style: solid;
+    background-color:gray;
+    padding: 2vw 2vw;
+    margin: 2%;
+}
+
+.ganteng img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8vw;
+}
+
+.tentang h1
+{
+    border: solid;
+    border-color: gold;
+    color: green;
+    text-align: center;
+}
+
+.tentang p
+{
+    font-size: 2vh;
+}
+
+.keahlian h1
+{
+    border: solid;
+    border-color: gold;
+    color: white;
+    text-align: center;
+}
+
+.keahlian p
+{
+    font-size: 2vh;
+}
+
+.riwayat h1
+{
+    border: solid;
+    border-color: gold;
+    color: blue;
+    text-align: center;
+}
+
+.riwayat h4
+{
+    color: magenta;
+}
+
+.riwayat li
+{
+    color:gold;
+    list-style-type: square;
+    font-size: 3vh;
+    padding-top: 1vh;
+    overflow-wrap: break-word;
+}
+
+.kontak h1
+{
+    border: solid;
+    border-color: gold;
+    color: red;
+    text-align: center;
+}
+
+.kontak li
+{
+    color: white;
+    list-style-type: square;
+    font-size: 3vh;
+    padding-top: 1vh;
+    overflow-wrap: break-word;
+}
+
+.kerja h1
+{
+    border: solid;
+    border-color: gold;
+    color: orange;
+    text-align: center;
+}
+
+.kerja p
+{
+    font-size: 2vh;
+}
+
+.wrapper 
+{
+    text-align: center;
+}
+
+.button 
+{
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 2vw;
+    width: 20vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.penutup 
+{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    animation: square-to-circle 2s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+    top:-100%; right:-100%; left:-100%; bottom:-100%;
+    margin:auto;
+    z-index:0;
+  }
+   
+  @keyframes square-to-circle {
+    0%  {
+      border-radius:0 0 0 0;
+      background:red;
+      transform:rotate(0deg);
+    }
+    25%  {
+      border-radius:50% 0 0 0;
+      background:yellow;
+      transform:rotate(45deg);
+    }
+    50%  {
+      border-radius:50% 50% 0 0;
+      background: green;
+      transform:rotate(90deg);
+    }
+    75%  { 
+      border-radius:50% 50% 50% 0;
+      background:purple;
+      transform:rotate(135deg);
+    }
+    100% {  
+      border-radius:50%;
+      background:blue;
+      transform:rotate(180deg);
+    }
+  }
+  
+.footer 
+{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+ }
